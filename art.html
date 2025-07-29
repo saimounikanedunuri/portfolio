@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Art Gallery</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    .art-image {
+      flex: 1 1 calc(33.333% - 40px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      background: #fff;
+      overflow: hidden;
+      max-width: 300px;
+    }
+
+    .art-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    @media (max-width: 900px) {
+      .art-image {
+        flex: 1 1 calc(50% - 40px);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .art-image {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo" onclick="location.href='index.html'">Sai Mounika</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="books.html">Books</a></li>
+        <li><a href="art.html" class="active">Art</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="content">
+    <h1>My Art Gallery</h1>
+
+    <div class="gallery">
+      <div class="art-image">
+        <img src="art_images/IMG_1233.jpg" alt=" Art 1">
+      </div>
+      <div class="art-image">
+        <img src="art_images/IMG_1242.jpg" alt=" Art 2">
+      </div>
+      <div class="art-image">
+        <img src="art_images/IMG_1246.jpg" alt=" Art 3">
+      </div>
+	  <div class="art-image">
+        <img src="art_images/IMG_1254.jpg" alt=" Art 1">
+      </div>
+      <div class="art-image">
+        <img src="art_images/IMG_1260.jpg" alt=" Art 2">
+      </div>
+      <div class="art-image">
+        <img src="art_images/IMG_1264.jpg" alt=" Art 3">
+      </div>
+	  <div class="art-image">
+        <img src="art_images/IMG_1274.jpg" alt=" Art 1">
+      </div>
+      <div class="art-image">
+        <img src="art_images/IMG_1286.jpg" alt=" Art 2">
+      </div>
+      <div class="art-image">
+        <img src="art_images/IMG_1297.jpg" alt=" Art 3">
+      </div>
+	  <div class="art-image">
+        <img src="art_images/IMG_1304.jpg" alt=" Art 1">
+      </div>
+      <div class="art-image">
+        <img src="art_images/IMG_1307.jpg" alt=" Art 2">
+      </div>
+      <div class="art-image">
+        <img src="art_images/IMG_1310.jpg" alt=" Art 3">
+      </div>
+	  <div class="art-image">
+        <img src="art_images/IMG_1315.jpg" alt=" Art 1">
+      </div>
+      <div class="art-image">
+        <img src="art_images/IMG_1322.jpg" alt=" Art 2">
+      </div>
+      <div class="art-image">
+        <img src="art_images/IMG_1332.jpg" alt=" Art 3">
+      </div>
+	  <div class="art-image">
+        <img src="art_images/IMG_1336.jpg" alt=" Art 1">
+      </div>
+      <div class="art-image">
+        <img src="art_images/IMG_1341.jpg" alt=" Art 2">
+      </div>
+      <div class="art-image">
+        <img src="art_images/IMG_1345.jpg" alt=" Art 3">
+      </div>
+	  <div class="art-image">
+        <img src="art_images/IMG_1233.jpg" alt=" Art 1">
+      </div>
+      <div class="art-image">
+        <img src="art_images/IMG_1242.jpg" alt=" Art 2">
+      </div>
+      <!-- Add more images as needed -->
+    </div>
+  </main>
+
+  <button id="topBtn" onclick="scrollToTop()">⬆ Top</button>
+  <script src="js/script.js"></script>
+</body>
+</html>
