@@ -1,50 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Gardening</title>
-  <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gardening Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #2e7d32;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: opacity 0.3s ease;
+        }
+
+        .hover-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+        }
+
+        .gallery-item:hover .hover-img {
+            opacity: 1;
+        }
+
+        .gallery-item:hover .main-img {
+            opacity: 0;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <div class="logo" onclick="location.href='index.html'">Sai Mounika</div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="books.html">Books</a></li>
-        <li><a href="art.html">Art</a></li>
-        <li><a href="gardening.html" class="active">Gardening</a></li>
-        <li><a href="bullet-journal.html">Bullet Journal</a></li>
-        <li><a href="podcasts.html">Podcasts Takeaways</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main class="content">
-    <h1>My Gardening Journey</h1>
-    <div class="image-container">
-      <!-- Example images - replace with yours -->
-      <a href="#" class="book">
-        <img src="gardening_images/IMG_20250731_130822.jpg" class="hover-sequence" 
-       data-images="gardening_images/IMG_20250802_162620.jpg"
-       alt="Gardening 1">
-      </a>
-      <a href="#" class="book">
-        <img src="gardening_images/IMG_20250731_133127.jpg" class="hover-sequence" 
-          data-hover="gardening_images/IMG_20250802_162644.jpg"
-          alt="Garden 2" />
-      </a>
-      <a href="#" class="book">
-        <img src="gardening_images/IMG_20250731_133426.jpg" class="hover-sequence"
-          data-hover="gardening_images/IMG_20250802_162628.jpg"
-          alt="Garden 3" />
-      </a>
-      
+    <h1>My Gardening Gallery</h1>
+
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="IMG_20250731_130822.jpg" alt="Rose" class="main-img">
+            <img src="IMG_20250802_162620.jpg" alt="Rose Hover" class="hover-img">
+        </div>
+        <div class="gallery-item">
+            <img src="IMG_20250731_133127.jpg" alt="Sunflower" class="main-img">
+            <img src="IMG_20250802_162628.jpg" alt="Sunflower Hover" class="hover-img">
+        </div>
+        <div class="gallery-item">
+            <img src="IMG_20250731_133426.jpg" alt="Tulip" class="main-img">
+            <img src="IMG_20250802_162644.jpg" alt="Tulip Hover" class="hover-img">
+        </div>
     </div>
-  </main>
 
-  <button id="topBtn" onclick="scrollToTop()">⬆ Top</button>
-  <script src="js/script.js"></script>
 </body>
 </html>
