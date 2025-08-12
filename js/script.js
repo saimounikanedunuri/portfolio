@@ -13,13 +13,22 @@ function scrollToTop() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-// Image hover swap for gardening
-document.querySelectorAll('.book-grid img').forEach(img => {
-  const original = img.src;
-  const hover = img.getAttribute('data-hover');
+// Hover sequence logic
+document.querySelectorAll('.hover-sequence').forEach(img => {
+  let interval;
+  let images = img.dataset.images.split(',');
+  let index = 0;
 
-  if (hover) {
-    img.addEventListener('mouseover', () => img.src = hover);
-    img.addEventListener('mouseout', () => img.src = original);
-  }
+  img.addEventListener('mouseenter', () => {
+    interval = setInterval(() => {
+      index = (index + 1) % images.length;
+      img.src = images[index];
+    }, 1000); // change every 1 second
+  });
+
+  img.addEventListener('mouseleave', () => {
+    clearInterval(interval);
+    img.src = images[0]; // reset to first
+    index = 0;
+  });
 });
