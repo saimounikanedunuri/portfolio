@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>My Art Gallery</title>
   <link rel="stylesheet" href="css/styles.css" />
+
   <style>
     .gallery {
       display: flex;
@@ -40,95 +41,92 @@
         flex: 1 1 100%;
       }
     }
+
+    /* Tabs */
+    .tabs {
+      margin: 20px 0;
+      text-align: center;
+    }
+
+    .tabs button {
+      padding: 10px 15px;
+      margin: 5px;
+      border: none;
+      background-color: #ddd;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .tabs button:hover {
+      background-color: #bbb;
+    }
+
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
   </style>
 </head>
-<body>
-  <header>
-    <div class="logo" onclick="location.href='index.html'">Sai Mounika</div>
-    <nav>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="books.html">Books</a></li>
-    <li><a href="art.html">Art</a></li>
-    <li><a href="gardening.html">Gardening</a></li>
-    <li><a href="bullet-journal.html">Bullet Journal</a></li>
-    <li><a href="podcasts.html">Podcasts Takeaways</a></li>
-  </ul>
-</nav>
-  </header>
 
-  <main class="content">
-    <h1>My Art Gallery</h1>
-	<div class="tabs">
-  <button onclick="showTab('procreate')">Procreate</button>
-  <button onclick="showTab('calligraphy')">Calligraphy</button>
-  <button onclick="showTab('mandala')">Dot Mandala</button>
-  <button onclick="showTab('lippan')">Lippan Art</button>
-</div>
-<div id="procreate" class="tab-content">
+<body>
+
+<header>
+  <div class="logo" onclick="location.href='index.html'">Sai Mounika</div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="books.html">Books</a></li>
+      <li><a href="art.html">Art</a></li>
+      <li><a href="gardening.html">Gardening</a></li>
+      <li><a href="bullet-journal.html">Bullet Journal</a></li>
+      <li><a href="podcasts.html">Podcasts Takeaways</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="content">
+  <h1>My Art Gallery</h1>
+
+  <!-- Tabs -->
+  <div class="tabs">
+    <button onclick="showTab('procreate')">Procreate</button>
+    <button onclick="showTab('calligraphy')">Calligraphy</button>
+    <button onclick="showTab('mandala')">Dot Mandala</button>
+    <button onclick="showTab('lippan')">Lippan Art</button>
+  </div>
+
+  <!-- ================= PROCREATE ================= -->
+  <div id="procreate" class="tab-content active">
     <div class="gallery">
-      
-      <div class="art-image">
-        <img src="art_images/IMG_1246.JPG" alt=" Art 3">
-      </div>
-	  <div class="art-image">
-        <img src="art_images/IMG_1254.JPG" alt=" Art 1">
-      </div>
-      <div class="art-image">
-        <img src="art_images/IMG_1260.JPG" alt=" Art 2">
-      </div>
-      <div class="art-image">
-        <img src="art_images/IMG_1264.JPG" alt=" Art 3">
-      </div>
-	  <div class="art-image">
-        <img src="art_images/IMG_1274.JPG" alt=" Art 1">
-      </div>
-      <div class="art-image">
-        <img src="art_images/IMG_1286.JPG" alt=" Art 2">
-      </div>
-      <div class="art-image">
-        <img src="art_images/IMG_1297.JPG" alt=" Art 3">
-      </div>
-	  <div class="art-image">
-        <img src="art_images/IMG_1304.JPG" alt=" Art 1">
-      </div>
-      <div class="art-image">
-        <img src="art_images/IMG_1307.JPG" alt=" Art 2">
-      </div>
-      <div class="art-image">
-        <img src="art_images/IMG_1310.JPG" alt=" Art 3">
-      </div>
-	  <div class="art-image">
-        <img src="art_images/IMG_1315.JPG" alt=" Art 1">
-      </div>
-      <div class="art-image">
-        <img src="art_images/IMG_1322.JPG" alt=" Art 2">
-      </div>
-      <div class="art-image">
-        <img src="art_images/IMG_1332.JPG" alt=" Art 3">
-      </div>
-	  <div class="art-image">
-        <img src="art_images/IMG_1336.JPG" alt=" Art 1">
-      </div>
-      <div class="art-image">
-        <img src="art_images/IMG_1341.JPG" alt=" Art 2">
-      </div>
-      <div class="art-image">
-        <img src="art_images/IMG_1345.JPG" alt=" Art 3">
-      </div>
-	  <div class="art-image">
-        <img src="art_images/IMG_1233.JPG" alt=" Art 1">
-      </div>
-      <div class="art-image">
-        <img src="art_images/IMG_1242.JPG" alt=" Art 2">
-      </div>
-      <!-- Add more images as needed -->
-	  <div class="art-image"><img src="art_images/16.jpg" alt="Art 16"></div>
-<div class="art-image"><img src="art_images/17.jpg" alt="Art 17"></div>
-<div class="art-image"><img src="art_images/18.jpg" alt="Art 18"></div>
-<div class="art-image"><img src="art_images/19.jpg" alt="Art 19"></div>
-<div class="art-image"><img src="art_images/20.jpg" alt="Art 20"></div>
-<div class="art-image"><img src="art_images/21.jpg" alt="Art 21"></div>
+
+      <!-- Your existing images -->
+      <div class="art-image"><img src="art_images/IMG_1246.JPG"></div>
+      <div class="art-image"><img src="art_images/IMG_1254.JPG"></div>
+      <div class="art-image"><img src="art_images/IMG_1260.JPG"></div>
+      <div class="art-image"><img src="art_images/IMG_1264.JPG"></div>
+      <div class="art-image"><img src="art_images/IMG_1274.JPG"></div>
+      <div class="art-image"><img src="art_images/IMG_1286.JPG"></div>
+      <div class="art-image"><img src="art_images/IMG_1297.JPG"></div>
+      <div class="art-image"><img src="art_images/IMG_1304.JPG"></div>
+      <div class="art-image"><img src="art_images/IMG_1307.JPG"></div>
+      <div class="art-image"><img src="art_images/IMG_1310.JPG"></div>
+      <div class="art-image"><img src="art_images/IMG_1315.JPG"></div>
+      <div class="art-image"><img src="art_images/IMG_1322.JPG"></div>
+      <div class="art-image"><img src="art_images/IMG_1332.JPG"></div>
+      <div class="art-image"><img src="art_images/IMG_1336.JPG"></div>
+      <div class="art-image"><img src="art_images/IMG_1341.JPG"></div>
+      <div class="art-image"><img src="art_images/IMG_1345.JPG"></div>
+
+      <!-- Example numbered images -->
+      <div class="art-image"><img src="art_images/16.jpg"></div>
+      <div class="art-image"><img src="art_images/17.jpg"></div>
+      <div class="art-image"><img src="art_images/18.jpg"></div>
+      <div class="art-image"><img src="art_images/19.jpg"></div>
+      <div class="art-image"><img src="art_images/20.jpg"></div>
+	  <div class="art-image"><img src="art_images/21.jpg" alt="Art 21"></div>
 <div class="art-image"><img src="art_images/22.jpg" alt="Art 22"></div>
 <div class="art-image"><img src="art_images/23.jpg" alt="Art 23"></div>
 <div class="art-image"><img src="art_images/24.jpg" alt="Art 24"></div>
@@ -198,21 +196,29 @@
 <div class="art-image"><img src="art_images/88.jpg" alt="Art 88"></div>
 <div class="art-image"><img src="art_images/89.jpg" alt="Art 89"></div>
     </div>
-	</div>
-<div id="calligraphy" class="tab-content" style="display:none;">
-  <h2>Calligraphy</h2>
-</div>
+  </div>
 
-<div id="mandala" class="tab-content" style="display:none;">
-  <h2>Dot Mandala Art</h2>
-</div>
+  <!-- ================= OTHER TABS ================= -->
+  <div id="calligraphy" class="tab-content">
+    <h2>Calligraphy</h2>
+    <p>Add your calligraphy images here</p>
+  </div>
 
-<div id="lippan" class="tab-content" style="display:none;">
-  <h2>Lippan Art</h2>
-</div>
-  </main>
+  <div id="mandala" class="tab-content">
+    <h2>Dot Mandala Art</h2>
+    <p>Add your mandala images here</p>
+  </div>
 
-  <button id="topBtn" onclick="scrollToTop()">⬆ Top</button>
-  <script src="js/script.js"></script>
+  <div id="lippan" class="tab-content">
+    <h2>Lippan Art</h2>
+    <p>Add your lippan art here</p>
+  </div>
+
+</main>
+
+<button id="topBtn" onclick="scrollToTop()">⬆ Top</button>
+
+<script src="js/script.js"></script>
+
 </body>
 </html>
