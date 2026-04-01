@@ -1,3 +1,4 @@
+console.log("JS LOADED");
 // Select all hover images
 document.querySelectorAll(".hover-sequence").forEach(img => {
   let intervalId;
