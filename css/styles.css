@@ -1,28 +1,7 @@
-/* Tabs styling */
-.tabs {
-  margin: 20px 0;
-  text-align: center;
-}
-
-.tabs button {
-  padding: 10px 15px;
-  margin: 5px;
-  border: none;
-  background-color: #ddd;
-  cursor: pointer;
-  border-radius: 5px;
-  font-weight: 500;
-}
-
-.tabs button:hover {
-  background-color: #bbb;
-}
-
-/* Tab content control */
 .tab-content {
   display: none;
 }
 
-#procreate {
+.tab-content.active {
   display: block;
 }
