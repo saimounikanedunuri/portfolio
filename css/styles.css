@@ -20,7 +20,7 @@ nav ul {
   gap: 1rem;
   list-style: none;
   flex-wrap: wrap; /* prevents breaking */
-  justify-content: center;
+   justify-content: flex-end;
 }
 
 nav ul li a {
@@ -33,4 +33,16 @@ nav ul li a {
 nav ul li a:hover {
   color: #fff;
   border-bottom: 2px solid #fff;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    margin-top: 10px;
+    justify-content: center;
+  }
 }
