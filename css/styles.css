@@ -27,7 +27,7 @@ nav ul {
   padding: 2rem;
   text-align: center;
 
-  /* ADD THESE 👇 */
+  /* 🔥 Center content vertically */
   min-height: 80vh;
   display: flex;
   flex-direction: column;
