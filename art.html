@@ -27,6 +27,7 @@
       width: 100%;
       height: auto;
       display: block;
+      cursor: pointer;
     }
 
     @media (max-width: 900px) {
@@ -43,91 +44,111 @@
   </style>
 </head>
 <body>
+
   <header>
     <div class="logo" onclick="location.href='index.html'">Sai Mounika</div>
     <nav>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="books.html">Books</a></li>
-    <li><a href="art.html">Art</a></li>
-    <li><a href="gardening.html">Gardening</a></li>
-    <li><a href="bullet-journal.html">Bullet Journal</a></li>
-    <li><a href="podcasts.html">Podcasts Takeaways</a></li>
-  </ul>
-</nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="books.html">Books</a></li>
+        <li><a href="art.html">Art</a></li>
+        <li><a href="gardening.html">Gardening</a></li>
+        <li><a href="bullet-journal.html">Bullet Journal</a></li>
+        <li><a href="podcasts.html">Podcasts Takeaways</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main class="content">
     <h1>My Art Gallery</h1>
 
     <div class="gallery">
+
+      <!-- 🔥 Hover animation applied here -->
       <div class="art-image">
-       
-	      <img src="art_images/IMG_1233.JPG" alt="Steal Like an Artist" />
+        <img src="art_images/0.jpg" class="hover-sequence" alt="Art Hover Preview">
       </div>
+
+      <!-- Normal images -->
       <div class="art-image">
-        <img src="art_images/IMG_1242.JPG" alt=" Art 2">
+        <img src="art_images/IMG_1233.JPG" alt="Steal Like an Artist" />
       </div>
+
       <div class="art-image">
-        <img src="art_images/IMG_1246.JPG" alt=" Art 3">
+        <img src="art_images/IMG_1242.JPG" alt="Art 2">
       </div>
-	  <div class="art-image">
-        <img src="art_images/IMG_1254.JPG" alt=" Art 1">
-      </div>
+
       <div class="art-image">
-        <img src="art_images/IMG_1260.JPG" alt=" Art 2">
+        <img src="art_images/IMG_1246.JPG" alt="Art 3">
       </div>
+
       <div class="art-image">
-        <img src="art_images/IMG_1264.JPG" alt=" Art 3">
+        <img src="art_images/IMG_1254.JPG" alt="Art 4">
       </div>
-	  <div class="art-image">
-        <img src="art_images/IMG_1274.JPG" alt=" Art 1">
-      </div>
+
       <div class="art-image">
-        <img src="art_images/IMG_1286.JPG" alt=" Art 2">
+        <img src="art_images/IMG_1260.JPG" alt="Art 5">
       </div>
+
       <div class="art-image">
-        <img src="art_images/IMG_1297.JPG" alt=" Art 3">
+        <img src="art_images/IMG_1264.JPG" alt="Art 6">
       </div>
-	  <div class="art-image">
-        <img src="art_images/IMG_1304.JPG" alt=" Art 1">
-      </div>
+
       <div class="art-image">
-        <img src="art_images/IMG_1307.JPG" alt=" Art 2">
+        <img src="art_images/IMG_1274.JPG" alt="Art 7">
       </div>
+
       <div class="art-image">
-        <img src="art_images/IMG_1310.JPG" alt=" Art 3">
+        <img src="art_images/IMG_1286.JPG" alt="Art 8">
       </div>
-	  <div class="art-image">
-        <img src="art_images/IMG_1315.JPG" alt=" Art 1">
-      </div>
+
       <div class="art-image">
-        <img src="art_images/IMG_1322.JPG" alt=" Art 2">
+        <img src="art_images/IMG_1297.JPG" alt="Art 9">
       </div>
+
       <div class="art-image">
-        <img src="art_images/IMG_1332.JPG" alt=" Art 3">
+        <img src="art_images/IMG_1304.JPG" alt="Art 10">
       </div>
-	  <div class="art-image">
-        <img src="art_images/IMG_1336.JPG" alt=" Art 1">
-      </div>
+
       <div class="art-image">
-        <img src="art_images/IMG_1341.JPG" alt=" Art 2">
+        <img src="art_images/IMG_1307.JPG" alt="Art 11">
       </div>
+
       <div class="art-image">
-        <img src="art_images/IMG_1345.JPG" alt=" Art 3">
+        <img src="art_images/IMG_1310.JPG" alt="Art 12">
       </div>
-	  <div class="art-image">
-        <img src="art_images/IMG_1233.JPG" alt=" Art 1">
-      </div>
+
       <div class="art-image">
-        <img src="art_images/IMG_1242.JPG" alt=" Art 2">
+        <img src="art_images/IMG_1315.JPG" alt="Art 13">
       </div>
-      <!-- Add more images as needed -->
+
+      <div class="art-image">
+        <img src="art_images/IMG_1322.JPG" alt="Art 14">
+      </div>
+
+      <div class="art-image">
+        <img src="art_images/IMG_1332.JPG" alt="Art 15">
+      </div>
+
+      <div class="art-image">
+        <img src="art_images/IMG_1336.JPG" alt="Art 16">
+      </div>
+
+      <div class="art-image">
+        <img src="art_images/IMG_1341.JPG" alt="Art 17">
+      </div>
+
+      <div class="art-image">
+        <img src="art_images/IMG_1345.JPG" alt="Art 18">
+      </div>
+
     </div>
   </main>
 
   <button id="topBtn" onclick="scrollToTop()">⬆ Top</button>
+
+  <!-- JS -->
   <script src="js/script.js"></script>
+
 </body>
 </html>
-
