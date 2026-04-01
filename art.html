@@ -59,7 +59,13 @@
 
   <main class="content">
     <h1>My Art Gallery</h1>
-
+	<div class="tabs">
+  <button onclick="showTab('procreate')">Procreate</button>
+  <button onclick="showTab('calligraphy')">Calligraphy</button>
+  <button onclick="showTab('mandala')">Dot Mandala</button>
+  <button onclick="showTab('lippan')">Lippan Art</button>
+</div>
+<div id="procreate" class="tab-content">
     <div class="gallery">
       
       <div class="art-image">
@@ -192,10 +198,21 @@
 <div class="art-image"><img src="art_images/88.jpg" alt="Art 88"></div>
 <div class="art-image"><img src="art_images/89.jpg" alt="Art 89"></div>
     </div>
+	</div>
+<div id="calligraphy" class="tab-content" style="display:none;">
+  <h2>Calligraphy</h2>
+</div>
+
+<div id="mandala" class="tab-content" style="display:none;">
+  <h2>Dot Mandala Art</h2>
+</div>
+
+<div id="lippan" class="tab-content" style="display:none;">
+  <h2>Lippan Art</h2>
+</div>
   </main>
 
   <button id="topBtn" onclick="scrollToTop()">⬆ Top</button>
   <script src="js/script.js"></script>
 </body>
 </html>
-
