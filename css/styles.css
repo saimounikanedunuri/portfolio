@@ -23,6 +23,18 @@ nav ul {
    justify-content: flex-end;
 }
 
+.content {
+  padding: 2rem;
+  text-align: center;
+
+  /* ADD THESE 👇 */
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 nav ul li a {
   color: #ccc;
   text-decoration: none;
