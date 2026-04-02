@@ -5,38 +5,86 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Gardening</title>
   <link rel="stylesheet" href="css/styles.css" />
+
+  <style>
+    /* ===== CATEGORY CARDS ===== */
+    .garden-categories {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .garden-card {
+      width: 220px;
+      height: 120px;
+      background: #fff;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      font-weight: 500;
+      text-decoration: none;
+      color: #333;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .garden-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    @media (max-width: 600px) {
+      .garden-card {
+        width: 100%;
+        max-width: 300px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <header>
-    <div class="logo" onclick="location.href='index.html'">Sai Mounika</div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="books.html">Books</a></li>
-        <li><a href="art.html">Art</a></li>
-        <li><a href="gardening.html" class="active">Gardening</a></li>
-        <li><a href="bullet-journal.html">Bullet Journal</a></li>
-        <li><a href="podcasts.html">Podcasts Takeaways</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main class="content">
-    <h1>My Gardening Journey</h1>
-    <div class="book-grid">
-      <!-- Example images - replace with yours -->
-      <a href="#" class="book">
-        <img src="gardening_images/IMG_20250731_130822.jpg" alt="Garden 1" />
-      </a>
-      <a href="#" class="book">
-        <img src="gardening_images/IMG_20250731_133127.jpg" alt="Garden 2" />
-      </a>
-      <a href="#" class="book">
-        <img src="gardening_images/IMG_20250731_133426.jpg" alt="Garden 3" />
-      </a>
-    </div>
-  </main>
+<header>
+  <div class="logo" onclick="location.href='index.html'">Sai Mounika</div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="books.html">Books</a></li>
+      <li><a href="art.html">Art</a></li>
+      <li><a href="gardening.html" class="active">Gardening</a></li>
+      <li><a href="bullet-journal.html">Bullet Journal</a></li>
+    </ul>
+  </nav>
+</header>
 
-  <script src="js/script.js"></script>
+<main class="content">
+  <h1>🌱 My Gardening Journey</h1>
+  <p>Explore different categories of my plants</p>
+
+  <!-- 🌿 CATEGORY BUTTONS -->
+  <div class="garden-categories">
+
+    <a href="#" class="garden-card">🌱 Microgreens</a>
+
+    <a href="#" class="garden-card">🏡 Indoor Plants</a>
+
+    <a href="#" class="garden-card">🌿 Succulents</a>
+
+    <a href="#" class="garden-card">🥕 Veggies</a>
+
+    <a href="#" class="garden-card">🍎 Fruits</a>
+
+    <a href="#" class="garden-card">🌸 Flowers</a>
+
+  </div>
+
+</main>
+
+<script src="js/script.js"></script>
+
 </body>
 </html>
