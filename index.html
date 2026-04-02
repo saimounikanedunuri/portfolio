@@ -3,30 +3,162 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Portfolio</title>
+  <title>Sai Mounika | Portfolio</title>
   <link rel="stylesheet" href="css/styles.css" />
-</head>
-<body>
-  <header>
-    <div class="logo" onclick="location.href='index.html'">Sai Mounika</div>
-   <nav>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="books.html">Books</a></li>
-    <li><a href="art.html">Art</a></li>
-    <li><a href="gardening.html">Gardening</a></li>
-    <li><a href="bullet-journal.html">Bullet Journal</a></li>
-    <li><a href="podcasts.html">Podcasts Takeaways</a></li>
-  </ul>
-</nav>
-  </header>
 
-<main class="content home-content">
-    <h1>Welcome to My Portfolio</h1>
-    <p></p>
-	<a href="art.html" class="button-link">🎨 View My Art</a>
-  </main>
-  <script src="js/script.js"></script>
+  <style>
+    /* HERO SECTION */
+    .hero {
+      min-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #555;
+      max-width: 600px;
+    }
+
+    .hero-buttons {
+      margin-top: 20px;
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .btn-primary {
+      background: #111;
+      color: #fff;
+    }
+
+    .btn-primary:hover {
+      background: #333;
+    }
+
+    .btn-outline {
+      border: 2px solid #111;
+      color: #111;
+    }
+
+    .btn-outline:hover {
+      background: #111;
+      color: #fff;
+    }
+
+    /* SECTIONS */
+    .section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .section h2 {
+      margin-bottom: 20px;
+    }
+
+    /* GRID */
+    .quick-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .card {
+      width: 220px;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      text-decoration: none;
+      color: #333;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo" onclick="location.href='index.html'">Sai Mounika</div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="books.html">Books</a></li>
+      <li><a href="art.html">Art</a></li>
+      <li><a href="gardening.html">Gardening</a></li>
+      <li><a href="bullet-journal.html">Bullet Journal</a></li>
+      <li><a href="podcasts.html">Podcasts</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Hi, I'm Sai Mounika 👋</h1>
+  <p>
+    Data Engineer by profession | Artist by passion 🎨  
+    I love creating art, exploring ideas, and sharing learnings through books & journals.
+  </p>
+
+  <div class="hero-buttons">
+    <a href="art.html" class="btn btn-primary">🎨 View My Art</a>
+    <a href="books.html" class="btn btn-outline">📚 My Books</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section">
+  <h2>About Me</h2>
+  <p>
+    I'm an AWS Data Engineer working with real-world data systems,  
+    and I also explore creativity through art, journaling, and content creation.
+  </p>
+</section>
+
+<!-- QUICK LINKS -->
+<section class="section">
+  <h2>Explore My Work</h2>
+
+  <div class="quick-links">
+    <a href="art.html" class="card">🎨 Art Gallery</a>
+    <a href="books.html" class="card">📚 Book Takeaways</a>
+    <a href="gardening.html" class="card">🌱 Gardening</a>
+    <a href="bullet-journal.html" class="card">📓 Bullet Journal</a>
+    <a href="podcasts.html" class="card">🎧 Podcasts</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="section">
+  <p>© 2026 Sai Mounika | Built with ❤️</p>
+</footer>
+
+<script src="js/script.js"></script>
+
 </body>
 </html>
-
