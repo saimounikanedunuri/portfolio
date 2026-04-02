@@ -16,7 +16,8 @@ header {
   cursor: pointer;
 }
 
-/* NAV */
+/* ================= NAV ================= */
+
 nav ul {
   display: flex;
   gap: 1rem;
@@ -37,7 +38,7 @@ nav ul li a:hover {
   border-bottom: 2px solid #fff;
 }
 
-/* ================= GENERAL CONTENT ================= */
+/* ================= GENERAL ================= */
 
 .content {
   padding: 2rem;
@@ -62,15 +63,17 @@ nav ul li a:hover {
   display: block;
 }
 
-/* ================= PINTEREST STYLE GRID (UPDATED) ================= */
+/* ================= PINTEREST GRID ================= */
 
 .book-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
   padding: 20px;
   align-items: start;
 }
+
+/* ================= CARD ================= */
 
 .book {
   background: #fff;
@@ -81,13 +84,14 @@ nav ul li a:hover {
 }
 
 .book:hover {
-  transform: translateY(-4px);
+  transform: translateY(-3px);
 }
 
-/* MEDIUM IMAGE SIZE FIX */
+/* ================= IMAGE (FIXED SIZE) ================= */
+
 .book img {
   width: 100%;
-  height: 260px;
+  height: 170px;   /* 🔥 FINAL FIX: SMALL + MEDIUM LOOK */
   object-fit: cover;
   display: block;
   transition: transform 0.3s ease;
@@ -100,14 +104,9 @@ nav ul li a:hover {
 /* optional caption */
 .book .caption {
   padding: 10px;
-  font-size: 14px;
+  font-size: 13px;
   color: #444;
-}
-
-/* ================= HOVER IMAGE SEQUENCE ================= */
-
-.hover-sequence {
-  cursor: pointer;
+  text-align: center;
 }
 
 /* ================= LIGHTBOX ================= */
@@ -166,12 +165,6 @@ nav ul li a:hover {
 
 /* ================= RESPONSIVE ================= */
 
-@media (max-width: 900px) {
-  .book img {
-    height: 240px;
-  }
-}
-
 @media (max-width: 768px) {
   header {
     flex-direction: column;
@@ -184,12 +177,12 @@ nav ul li a:hover {
   }
 
   .book img {
-    height: 220px;
+    height: 150px;   /* even smaller on mobile */
   }
 }
 
 @media (max-width: 480px) {
   .book img {
-    height: 200px;
+    height: 140px;
   }
 }
