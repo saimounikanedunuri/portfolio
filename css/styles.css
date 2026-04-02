@@ -1,5 +1,3 @@
-/* ================= HEADER ================= */
-
 header {
   background: #111;
   padding: 1rem 2rem;
@@ -7,7 +5,7 @@ header {
   justify-content: space-between;
   align-items: center;
   color: #fff;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* IMPORTANT */
 }
 
 .logo {
@@ -16,29 +14,14 @@ header {
   cursor: pointer;
 }
 
-/* ================= NAV ================= */
-
+/* NAV FIX */
 nav ul {
   display: flex;
   gap: 1rem;
   list-style: none;
-  flex-wrap: wrap;
-  justify-content: flex-end;
+  flex-wrap: wrap; /* prevents breaking */
+   justify-content: flex-end;
 }
-
-nav ul li a {
-  color: #ccc;
-  text-decoration: none;
-  font-weight: 500;
-  padding: 5px 0;
-}
-
-nav ul li a:hover {
-  color: #fff;
-  border-bottom: 2px solid #fff;
-}
-
-/* ================= GENERAL ================= */
 
 .content {
   padding: 2rem;
@@ -53,117 +36,17 @@ nav ul li a:hover {
   align-items: center;
 }
 
-/* ================= TABS ================= */
-
-.tab-content {
-  display: none;
+nav ul li a {
+  color: #ccc;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 5px 0;
 }
 
-.tab-content.active {
-  display: block;
-}
-
-/* ================= PINTEREST GRID ================= */
-
-.book-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 16px;
-  padding: 20px;
-  align-items: start;
-}
-
-/* ================= CARD ================= */
-
-.book {
-  background: #fff;
-  border-radius: 14px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  transition: transform 0.2s ease;
-}
-
-.book:hover {
-  transform: translateY(-3px);
-}
-
-/* ================= IMAGE (FIXED SIZE) ================= */
-
-.book img {
-  width: 100%;
-  height: 170px;   /* 🔥 FINAL FIX: SMALL + MEDIUM LOOK */
-  object-fit: cover;
-  display: block;
-  transition: transform 0.3s ease;
-}
-
-.book img:hover {
-  transform: scale(1.03);
-}
-
-/* optional caption */
-.book .caption {
-  padding: 10px;
-  font-size: 13px;
-  color: #444;
-  text-align: center;
-}
-
-/* ================= LIGHTBOX ================= */
-
-#lightbox {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.9);
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-}
-
-#lightbox img {
-  max-width: 90%;
-  max-height: 80%;
-  border-radius: 10px;
-}
-
-#lightbox-caption {
+nav ul li a:hover {
   color: #fff;
-  margin-top: 10px;
-  font-size: 14px;
+  border-bottom: 2px solid #fff;
 }
-
-#lightbox-close {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  font-size: 30px;
-  color: white;
-  cursor: pointer;
-}
-
-/* ================= SCROLL TO TOP ================= */
-
-#scrollTopBtn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  padding: 10px 14px;
-  border-radius: 50%;
-  border: none;
-  background: black;
-  color: white;
-  font-size: 18px;
-  cursor: pointer;
-  display: none;
-  z-index: 9999;
-}
-
-/* ================= RESPONSIVE ================= */
 
 @media (max-width: 768px) {
   header {
@@ -175,14 +58,45 @@ nav ul li a:hover {
     margin-top: 10px;
     justify-content: center;
   }
+}
 
-  .book img {
-    height: 150px;   /* even smaller on mobile */
+/* ================= BOOKS PAGE ================= */
+
+.book-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.book {
+  flex: 1 1 calc(33.333% - 40px);
+  max-width: 250px;
+}
+
+.book img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.book img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .book {
+    flex: 1 1 calc(50% - 40px);
   }
 }
 
-@media (max-width: 480px) {
-  .book img {
-    height: 140px;
+@media (max-width: 600px) {
+  .book {
+    flex: 1 1 100%;
   }
 }
