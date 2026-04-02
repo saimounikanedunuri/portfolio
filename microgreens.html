@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Microgreens</title>
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <style>
+    /* 🌱 Gallery Layout (same feel as art page) */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .garden-image {
+      flex: 1 1 calc(33.333% - 40px);
+      max-width: 250px; /* 👈 medium size */
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .garden-image:hover {
+      transform: scale(1.05);
+    }
+
+    .garden-image img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* 📱 Responsive */
+    @media (max-width: 900px) {
+      .garden-image {
+        flex: 1 1 calc(50% - 40px);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .garden-image {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo" onclick="location.href='index.html'">Sai Mounika</div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="books.html">Books</a></li>
+      <li><a href="art.html">Art</a></li>
+      <li><a href="gardening.html">Gardening</a></li>
+      <li><a href="bullet-journal.html">Bullet Journal</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="content">
+  <h1>🌱 Microgreens</h1>
+
+  <div class="gallery">
+
+    <!-- 🌿 Your Images (same paths as you gave) -->
+    <div class="garden-image">
+      <img src="gardening_images/IMG_20250731_130822.jpg" alt="Microgreens 1" loading="lazy">
+    </div>
+
+    <div class="garden-image">
+      <img src="gardening_images/IMG_20250731_133127.jpg" alt="Microgreens 2" loading="lazy">
+    </div>
+
+    <div class="garden-image">
+      <img src="gardening_images/IMG_20250731_133426.jpg" alt="Microgreens 3" loading="lazy">
+    </div>
+
+  </div>
+</main>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
