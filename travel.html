@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Travel</title>
+<link rel="stylesheet" href="css/styles.css" />
+
+<style>
+
+/* HERO */
+.travel-hero {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.travel-hero h1 {
+  font-size: 2.5rem;
+}
+
+.travel-hero p {
+  color: #666;
+  font-style: italic;
+}
+
+/* CATEGORY BUTTONS */
+.travel-categories {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 30px 0;
+}
+
+.travel-categories button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 20px;
+  background: #111;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* TIMELINE */
+.timeline {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.timeline div {
+  margin: 10px 0;
+}
+
+/* GALLERY */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* POLAROID STYLE */
+.travel-card {
+  width: 220px;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transform: rotate(var(--rotate));
+  transition: 0.3s;
+}
+
+.travel-card:hover {
+  transform: scale(1.05) rotate(0deg);
+}
+
+.travel-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* CAPTION */
+.caption {
+  text-align: center;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo" onclick="location.href='index.html'">Sai Mounika</div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="books.html">Books</a></li>
+      <li><a href="art.html">Art</a></li>
+      <li><a href="gardening.html">Gardening</a></li>
+      <li><a href="bullet-journal.html">Bullet Journal</a></li>
+      <li><a href="travel.html">Travel</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="travel-hero">
+  <h1>🌍 My Travel Diaries</h1>
+  <p>“Collect moments, not things”</p>
+</section>
+
+<!-- CATEGORY -->
+<div class="travel-categories">
+  <button>🛕 Temples</button>
+  <button>🌊 Beaches</button>
+  <button>🏔️ Mountains</button>
+  <button>🌆 Cities</button>
+</div>
+
+<!-- TIMELINE -->
+<div class="timeline">
+  <div>📍 2023 → Goa 🌊</div>
+  <div>📍 2024 → Kedarnath 🛕</div>
+  <div>📍 2025 → Varanasi 🛕</div>
+</div>
+
+<!-- GALLERY -->
+<div class="gallery">
+
+  <!-- CARD 1 -->
+  <div class="travel-card" style="--rotate:-5deg;">
+    <img src="travel_images/goa.jpg" alt="">
+    <div class="caption">
+      📍 Goa <br> 🌊 Sunset vibes
+    </div>
+  </div>
+
+  <!-- CARD 2 -->
+  <div class="travel-card" style="--rotate:4deg;">
+    <img src="travel_images/kedarnath.jpg" alt="">
+    <div class="caption">
+      📍 Kedarnath <br> 🛕 Divine journey
+    </div>
+  </div>
+
+  <!-- CARD 3 -->
+  <div class="travel-card" style="--rotate:-3deg;">
+    <img src="travel_images/varanasi.jpg" alt="">
+    <div class="caption">
+      📍 Varanasi <br> ✨ Peaceful mornings
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
