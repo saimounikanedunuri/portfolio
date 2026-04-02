@@ -11,8 +11,8 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      padding: 20px;
       gap: 20px;
+      padding: 20px;
     }
 
     .art-image {
@@ -21,14 +21,21 @@
       background: #fff;
       border-radius: 10px;
       overflow: hidden;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .art-image:hover {
+      transform: scale(1.05);
     }
 
     .art-image img {
       width: 100%;
+      height: auto;
       display: block;
     }
 
+    /* Responsive */
     @media (max-width: 900px) {
       .art-image {
         flex: 1 1 calc(50% - 40px);
@@ -52,21 +59,112 @@
       <li><a href="index.html">Home</a></li>
       <li><a href="books.html">Books</a></li>
       <li><a href="art.html">Art</a></li>
+      <li><a href="gardening.html">Gardening</a></li>
+      <li><a href="bullet-journal.html">Bullet Journal</a></li>
+      <li><a href="podcasts.html">Podcasts Takeaways</a></li>
     </ul>
   </nav>
 </header>
 
 <main class="content">
-  <h1>Procreate Art</h1>
+  <h1>🎨 Procreate Art</h1>
 
   <div class="gallery">
-    <!-- 🔥 MOVE ALL YOUR IMAGES HERE -->
-    <div class="art-image"><img src="art_images/IMG_1246.JPG"></div>
-    <div class="art-image"><img src="art_images/IMG_1254.JPG"></div>
-    <div class="art-image"><img src="art_images/IMG_1260.JPG"></div>
-    <!-- continue all images same -->
-  </div>
 
+    <!-- 🔥 Your Images (optimized with lazy loading) -->
+    <div class="art-image"><img src="art_images/IMG_1246.JPG" loading="lazy"></div>
+    <div class="art-image"><img src="art_images/IMG_1254.JPG" loading="lazy"></div>
+    <div class="art-image"><img src="art_images/IMG_1260.JPG" loading="lazy"></div>
+    <div class="art-image"><img src="art_images/IMG_1264.JPG" loading="lazy"></div>
+    <div class="art-image"><img src="art_images/IMG_1274.JPG" loading="lazy"></div>
+    <div class="art-image"><img src="art_images/IMG_1286.JPG" loading="lazy"></div>
+    <div class="art-image"><img src="art_images/IMG_1297.JPG" loading="lazy"></div>
+    <div class="art-image"><img src="art_images/IMG_1304.JPG" loading="lazy"></div>
+    <div class="art-image"><img src="art_images/IMG_1307.JPG" loading="lazy"></div>
+    <div class="art-image"><img src="art_images/IMG_1310.JPG" loading="lazy"></div>
+    <div class="art-image"><img src="art_images/IMG_1315.JPG" loading="lazy"></div>
+    <div class="art-image"><img src="art_images/IMG_1322.JPG" loading="lazy"></div>
+    <div class="art-image"><img src="art_images/IMG_1332.JPG" loading="lazy"></div>
+    <div class="art-image"><img src="art_images/IMG_1336.JPG" loading="lazy"></div>
+    <div class="art-image"><img src="art_images/IMG_1341.JPG" loading="lazy"></div>
+    <div class="art-image"><img src="art_images/IMG_1345.JPG" loading="lazy"></div>
+
+    <!-- Numbered Images -->
+    <div class="art-image"><img src="art_images/16.jpg" loading="lazy"></div>
+    <div class="art-image"><img src="art_images/17.jpg" loading="lazy"></div>
+    <div class="art-image"><img src="art_images/18.jpg" loading="lazy"></div>
+    <div class="art-image"><img src="art_images/19.jpg" loading="lazy"></div>
+    <div class="art-image"><img src="art_images/20.jpg" loading="lazy"></div>
+    <div class="art-image"><img src="art_images/21.jpg" loading="lazy"></div>
+    <div class="art-image"><img src="art_images/22.jpg" loading="lazy"></div>
+    <div class="art-image"><img src="art_images/23.jpg" loading="lazy"></div>
+    <div class="art-image"><img src="art_images/24.jpg" loading="lazy"></div>
+    <div class="art-image"><img src="art_images/25.jpg" loading="lazy"></div>
+    <div class="art-image"><img src="art_images/26.jpg" loading="lazy"></div>
+    <div class="art-image"><img src="art_images/27.jpg" loading="lazy"></div>
+    <div class="art-image"><img src="art_images/28.jpg" loading="lazy"></div>
+    <div class="art-image"><img src="art_images/29.jpg" loading="lazy"></div>
+    <div class="art-image"><img src="art_images/30.jpg" loading="lazy"></div>
+    <div class="art-image"><img src="art_images/31.jpg" loading="lazy"></div>
+    <div class="art-image"><img src="art_images/32.jpg" loading="lazy"></div>
+    <div class="art-image"><img src="art_images/33.jpg" loading="lazy"></div>
+    <div class="art-image"><img src="art_images/34.jpg" loading="lazy"></div>
+    <div class="art-image"><img src="art_images/35.jpg" loading="lazy"></div>
+    <div class="art-image"><img src="art_images/36.jpg" loading="lazy"></div>
+    <div class="art-image"><img src="art_images/37.jpg" loading="lazy"></div>
+    <div class="art-image"><img src="art_images/38.jpg" loading="lazy"></div>
+    <div class="art-image"><img src="art_images/39.jpg" loading="lazy"></div>
+    <div class="art-image"><img src="art_images/40.jpg" loading="lazy"></div>
+    <div class="art-image"><img src="art_images/41.jpg" loading="lazy"></div>
+    <div class="art-image"><img src="art_images/42.jpg" loading="lazy"></div>
+    <div class="art-image"><img src="art_images/43.jpg" loading="lazy"></div>
+    <div class="art-image"><img src="art_images/44.jpg" loading="lazy"></div>
+    <div class="art-image"><img src="art_images/45.jpg" loading="lazy"></div>
+    <div class="art-image"><img src="art_images/46.jpg" loading="lazy"></div>
+    <div class="art-image"><img src="art_images/47.jpg" loading="lazy"></div>
+    <div class="art-image"><img src="art_images/48.jpg" loading="lazy"></div>
+    <div class="art-image"><img src="art_images/49.jpg" loading="lazy"></div>
+    <div class="art-image"><img src="art_images/50.jpg" loading="lazy"></div>
+<div class="art-image"><img src="art_images/51.jpg" alt="Art 51"></div>
+<div class="art-image"><img src="art_images/52.jpg" alt="Art 52"></div>
+<div class="art-image"><img src="art_images/53.jpg" alt="Art 53"></div>
+<div class="art-image"><img src="art_images/54.jpg" alt="Art 54"></div>
+<div class="art-image"><img src="art_images/55.jpg" alt="Art 55"></div>
+<div class="art-image"><img src="art_images/56.jpg" alt="Art 56"></div>
+<div class="art-image"><img src="art_images/57.jpg" alt="Art 57"></div>
+<div class="art-image"><img src="art_images/58.jpg" alt="Art 58"></div>
+<div class="art-image"><img src="art_images/59.jpg" alt="Art 59"></div>
+<div class="art-image"><img src="art_images/60.jpg" alt="Art 60"></div>
+<div class="art-image"><img src="art_images/61.jpg" alt="Art 61"></div>
+<div class="art-image"><img src="art_images/62.jpg" alt="Art 62"></div>
+<div class="art-image"><img src="art_images/63.jpg" alt="Art 63"></div>
+<div class="art-image"><img src="art_images/64.jpg" alt="Art 64"></div>
+<div class="art-image"><img src="art_images/65.jpg" alt="Art 65"></div>
+<div class="art-image"><img src="art_images/66.jpg" alt="Art 66"></div>
+<div class="art-image"><img src="art_images/67.jpg" alt="Art 67"></div>
+<div class="art-image"><img src="art_images/68.jpg" alt="Art 68"></div>
+<div class="art-image"><img src="art_images/69.jpg" alt="Art 69"></div>
+<div class="art-image"><img src="art_images/70.jpg" alt="Art 70"></div>
+<div class="art-image"><img src="art_images/71.jpg" alt="Art 71"></div>
+<div class="art-image"><img src="art_images/72.jpg" alt="Art 72"></div>
+<div class="art-image"><img src="art_images/73.jpg" alt="Art 73"></div>
+<div class="art-image"><img src="art_images/74.jpg" alt="Art 74"></div>
+<div class="art-image"><img src="art_images/75.jpg" alt="Art 75"></div>
+<div class="art-image"><img src="art_images/76.jpg" alt="Art 76"></div>
+<div class="art-image"><img src="art_images/77.jpg" alt="Art 77"></div>
+<div class="art-image"><img src="art_images/78.jpg" alt="Art 78"></div>
+<div class="art-image"><img src="art_images/79.jpg" alt="Art 79"></div>
+<div class="art-image"><img src="art_images/80.jpg" alt="Art 80"></div>
+<div class="art-image"><img src="art_images/81.jpg" alt="Art 81"></div>
+<div class="art-image"><img src="art_images/82.jpg" alt="Art 82"></div>
+<div class="art-image"><img src="art_images/83.jpg" alt="Art 83"></div>
+<div class="art-image"><img src="art_images/84.jpg" alt="Art 84"></div>
+<div class="art-image"><img src="art_images/85.jpg" alt="Art 85"></div>
+<div class="art-image"><img src="art_images/86.jpg" alt="Art 86"></div>
+<div class="art-image"><img src="art_images/87.jpg" alt="Art 87"></div>
+<div class="art-image"><img src="art_images/88.jpg" alt="Art 88"></div>
+<div class="art-image"><img src="art_images/89.jpg" alt="Art 89"></div>
+  </div>
 </main>
 
 <script src="js/script.js"></script>
